@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 loginViewModel.getDataUser(strUsername, strPassword);
 
                 if (strUsername.isEmpty() || strPassword.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Ups, Form harus diisi semua!",
+                    Toast.makeText(LoginActivity.this, "Form harus diisi semua!",
                             Toast.LENGTH_LONG).show();
                 } else {
                     loginViewModel.getDataUser(strUsername, strPassword).observe(LoginActivity.this,
@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(intent);
                         } else {
                             Toast.makeText(LoginActivity.this,
-                                    "Ups, Username atau Password Anda salah!", Toast.LENGTH_LONG).show();
+                                    "Username atau Password Anda salah!", Toast.LENGTH_LONG).show();
                         }
                     });
                 }
